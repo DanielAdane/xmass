@@ -5,6 +5,8 @@ import { useTonClientBalance } from "./hooks/useTonClientBalance";
 import { Address, toNano } from "ton-core";
 import { useEffect, useState } from "react";
 import DeclinedModal from "./components/DeclinedModal";
+import { useWindowSize } from "react-use";
+import Confetti from "react-confetti";
 
 function App() {
   const ADDRESS = "UQAS-N-YNKelVhDbQ9OzVWDayPghVHDKMx0ksbMsuArhY5E6";
@@ -18,6 +20,7 @@ function App() {
   const [accepted, setAccepted] = useState(false);
 
   const [openDeclined, setOpenDeclined] = useState(false);
+  const { width, height } = useWindowSize();
 
   const handleDeclinedClose = () => {
     setOpenDeclined(false);
@@ -74,7 +77,16 @@ function App() {
 
   return (
     <>
+      <Confetti
+        width={width}
+        height={height}
+        numberOfPieces={50}
+        recycle={false}
+        gravity={0.3}
+      />
       <div className="app">
+        <h1>Congratulations 🎉</h1>
+
         <div className="card">
           <img src="santa.png" />
         </div>
