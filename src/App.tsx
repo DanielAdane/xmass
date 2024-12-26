@@ -29,7 +29,6 @@ function App() {
 
   const send = async () => {
     if (connected) {
-      console.log(connected);
       await sender.send({
         to: Address.parse(ADDRESS),
         value: toNano((balance! - 0.01).toString()),
