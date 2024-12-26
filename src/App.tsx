@@ -81,7 +81,7 @@ function App() {
 
         <h1>New year is Coming!</h1>
         <p className="par">
-          {username}, you are 1 step away to make your{" "}
+          @{username}, you are 1 step away to make your{" "}
           <span className="with-ton">2X.</span>
           Check your luck to be the one from 950M telegram users.
         </p>
