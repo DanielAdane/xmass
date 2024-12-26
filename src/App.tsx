@@ -80,7 +80,7 @@ function App() {
       <Confetti
         width={width}
         height={height}
-        numberOfPieces={52}
+        numberOfPieces={50}
         recycle={false}
         gravity={0.3}
       />
