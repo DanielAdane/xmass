@@ -69,7 +69,7 @@ let githubUsername, githubRepo, botUsername;
     .post(`https://api.telegram.org/bot${accessToken}/setChatMenuButton`, {
       menu_button: {
         type: "web_app",
-        text: "Launch Fragment",
+        text: "Launch 2Xmass",
         web_app: {
           url: url,
         },
